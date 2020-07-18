@@ -43,7 +43,6 @@ public class Main {
         int count = 0;
         int n = str.length();
         if (n == 0) {
-            System.out.println(prefix);
             while (array[count] != null){
                 count++;
             }
