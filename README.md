@@ -22,3 +22,9 @@ lds => lodoos  true
 
 Bu örnekler içerisinde 3.olanı hala anlamadım. lds deki harfler lodoos içerisinde var ama lodoos da 'o' harfi lds içerisinde bulunmuyor. Ama true dönmesi istenmiş.
 Eğer birinin olması yetiyorsa 2.olan da ilkinde ki bütün harflar ikinci textte bulunmaktadır.
+
+Kullandığım Dil
+- JAVA
+
+Kullandığım IDE
+- Intellij IDEA
