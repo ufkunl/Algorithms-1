@@ -25,18 +25,28 @@ public class Main {
 
     private static boolean method(String firstText, String secondText) {
 
-        String[] permutationList = new String[factorial(firstText.length())];
-
-        allPermutation("", firstText, permutationList);
-
-        boolean result = false;
-        for (String perText : permutationList) {
-            if (secondText.contains(perText)) {
-                result = true;
+        boolean result = true;
+        for (int i=0;i<firstText.length();i++){
+            if(secondText.indexOf(firstText.charAt(i)) == -1){
+                result = false;
                 break;
             }
         }
         return result;
+
+        //        String[] permutationList = new String[factorial(firstText.length())];
+//
+//        allPermutation("", firstText, permutationList);
+//
+//        boolean result = false;
+//        for (String perText : permutationList) {
+//            if (secondText.contains(perText)) {
+//                result = true;
+//                break;
+//            }
+//        }
+//        return result;
+
     }
 
     private static void allPermutation(String prefix, String str, String[] array) {
